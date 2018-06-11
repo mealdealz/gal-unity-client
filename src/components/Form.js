@@ -4,22 +4,26 @@ import React from 'react'
 class Form extends React.Component {
 
   state = {
-      "id": "",
-      "restaurant": "",
-      "special": "",
-      "website": "",
-      "phone": "",
-      "location": "",
-      "image": ""
-    }
+    "id": "",
+    "restaurant": "",
+    "days": "",
+    "time": "",
+    "specials": "",
+    "site": "",
+    "phone": "",
+    "location": "",
+    "image": ""
+  }
 
   resetForm = () => {
     this.setState(
       {
         "id": "",
         "restaurant": "",
-        "special": "",
-        "website": "",
+        "days": "",
+        "time": "",
+        "specials": "",
+        "site": "",
         "phone": "",
         "location": "",
         "image": ""
@@ -43,25 +47,34 @@ class Form extends React.Component {
     return (
       <aside id="side-bar">
         <h3>Add a Deal</h3>
-        <form className="job-form" onSubmit={this.onFormSubmit}>
-          <label htmlFor="restaurant">Restaurant Name</label>
+        <form className="form" onSubmit={this.onFormSubmit}>
+          <label htmlFor="restaurant">Restaurant Name:</label>
           <input type="text" value={this.state.restaurant} name="restaurant" onChange={this.handleChange}
-            />
-          <label htmlFor="website">Website</label>
-          <input type="text" value={this.state.website} name="website" onChange={this.handleChange}
-            />
-          <label htmlFor="location">Address</label>
+          />
+          <label htmlFor="days">Days:</label>
+          <input type="text" value={this.state.days} name="days" onChange={this.handleChange}
+          />
+          <label htmlFor="time">Time of specials:</label>
+          <input id="time" type="time" value={this.state.time} name="time" onChange={this.handleChange}
+          />
+          <label htmlFor="time"> - </label>
+          <input id="time" type="time" value={this.state.time} name="time" onChange={this.handleChange}
+          />
+          <label htmlFor="specials">Describe the Special Here:</label>
+          <textarea name="specials" value={this.state.specials} onChange={this.handleChange}
+            rows="8" cols="40"></textarea>
+          <label htmlFor="site">Site:</label>
+          <input type="text" value={this.state.site} name="site" onChange={this.handleChange}
+          />
+          <label htmlFor="phone">Phone Number:</label>
+          <input type="text" value={this.state.phone} name="phone" onChange={this.handleChange}
+          />
+          <label htmlFor="location">Address:</label>
           <input type="text" value={this.state.location} name="location" onChange={this.handleChange}
             />
-          <label htmlFor="phone">Phone Number</label>
-          <input type="text" value={this.state.phone} name="phone" onChange={this.handleChange}
-            />
-          <label htmlFor="image">Pics?</label>
+          <label htmlFor="image">Pic:</label>
           <input type="text" value={this.state.image} name="image" onChange={this.handleChange}
             />
-          <label htmlFor="special">Describe the Special Here</label>
-          <textarea name="special" value={this.state.special} onChange={this.handleChange}
-            rows="8" cols="40"></textarea>
           <input type="submit" name="submit" value="Submit" />
         </form>
       </aside>
