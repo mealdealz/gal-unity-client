@@ -6,26 +6,26 @@ import TimeFilter from './TimeFilter';
 
 
 class App extends React.Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     listings: []
-  //   }
-  // }
+  constructor() {
+    super()
+    this.state = {
+      listings: []
+    }
+  }
 
-  // componentDidMount() {
-  //   fetch('./listings.json')
-  //   .then(response => response.json())
-  //   .then(response => {
-  //     this.setState({listings: response})
-  //   })
-  // }
+  componentDidMount() {
+    fetch('./listings.json')
+    .then(response => response.json())
+    .then(response => {
+      this.setState({listings: response})
+    })
+  }
 
-  // listingSubmitted = (deal) => {
-  //     this.setState({
-  //       listings: this.state.listings.concat(deal).reverse()
-  //     })
-  //   }
+  listingSubmitted = (deal) => {
+      this.setState({
+        listings: this.state.listings.concat(deal).reverse()
+      })
+    }
 
     render() {
         return(

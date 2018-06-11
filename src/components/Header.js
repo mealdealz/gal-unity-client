@@ -10,7 +10,7 @@ class Header extends React.Component{
             <button>Add Deal</button>
           </div>
             <div>
-              <Form listingSubmitted={this.listingSubmitted} />
+              <Form listingSubmitted={this.props.listingSubmitted} />
             </div>
           <div>
             <img alt="Meal Dealz Logo" src={this.props.src}/>
