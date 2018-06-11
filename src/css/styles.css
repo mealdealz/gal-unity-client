@@ -1,22 +1,52 @@
 body {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header-top {
-    display: flex;
-    background: pink;
-    justify-content: space-between;
+  display: flex;
+  background: pink;
+  justify-content: space-between;
 }
 
 .map {
-    position: absolute;
-    height: 3vh;
-    width: 3vw;
+  position: absolute;
+  height: 3vh;
+  width: 3vw;
 }
 
 .deal-card {
-    display: flex;
-    border: 1px solid black;
-    justify-content: space-around;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+
+/*-------------Form--------------*/
+.form-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px auto 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form input[type=submit] {
+  color: #fff;
+  background-color: #d55a35;
+  cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+  color: #dadada;
 }
