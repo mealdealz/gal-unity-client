@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from './Form';
 
 class Header extends React.Component{
   render() {
@@ -9,7 +10,7 @@ class Header extends React.Component{
             <button>Add Deal</button>
           </div>
             <div>
-              <p>Future home of drop down to add</p>
+              <Form listingSubmitted={this.listingSubmitted} />
             </div>
           <div>
             <img alt="Meal Dealz Logo" src={this.props.src}/>

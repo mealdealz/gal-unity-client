@@ -44,14 +44,23 @@ class Form extends React.Component {
       <aside id="side-bar">
         <h3>Add a Deal</h3>
         <form className="job-form" onSubmit={this.onFormSubmit}>
-          <label htmlFor="title">Title</label>
-          <input type="text" value={this.state.title} name="title" onChange={this.handleChange}
+          <label htmlFor="restaurant">Restaurant Name</label>
+          <input type="text" value={this.state.restaurant} name="restaurant" onChange={this.handleChange}
             />
-          <label htmlFor="pay">Pay</label>
-          <input type="text" value={this.state.pay} name="pay" onChange={this.handleChange}
+          <label htmlFor="website">Website</label>
+          <input type="text" value={this.state.website} name="website" onChange={this.handleChange}
             />
-          <label htmlFor="description">Description</label>
-          <textarea name="description" value={this.state.description} onChange={this.handleChange}
+          <label htmlFor="location">Address</label>
+          <input type="text" value={this.state.location} name="location" onChange={this.handleChange}
+            />
+          <label htmlFor="phone">Phone Number</label>
+          <input type="text" value={this.state.phone} name="phone" onChange={this.handleChange}
+            />
+          <label htmlFor="image">Pics?</label>
+          <input type="text" value={this.state.image} name="image" onChange={this.handleChange}
+            />
+          <label htmlFor="special">Describe the Special Here</label>
+          <textarea name="special" value={this.state.special} onChange={this.handleChange}
             rows="8" cols="40"></textarea>
           <input type="submit" name="submit" value="Submit" />
         </form>
