@@ -52,10 +52,16 @@ class Form extends React.Component {
           <input type="text" value={this.state.restaurant} name="restaurant" onChange={this.handleChange}/>
           <label htmlFor="days">Days:</label>
           <input type="text" value={this.state.days} name="days" onChange={this.handleChange}/>
-          <label htmlFor="time">Time of specials:</label>
+          {/* <label htmlFor="time">Time of specials:</label>
           <input id="time" type="time" value={this.state.time} name="time" onChange={this.handleChange}/>
           <label htmlFor="time"> - </label>
-          <input id="time" type="time" value={this.state.time} name="time" onChange={this.handleChange}/>
+          <input id="time2" type="time" value={this.state.time} name="time" onChange={this.handleChange}/> */}
+          <fieldset>
+            <label for="min">From</label>
+            <input type="time" id="min" name="min" />
+            <label for="max">To</label>
+            <input type="time" id="max" name="max" />
+          </fieldset>
           <label htmlFor="specials">Describe the Special Here:</label>
           <textarea name="specials" value={this.state.specials} onChange={this.handleChange} rows="8" cols="40"></textarea>
           <label htmlFor="site">Site:</label>
