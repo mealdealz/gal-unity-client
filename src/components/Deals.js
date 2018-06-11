@@ -15,10 +15,8 @@ class Deals extends React.Component {
                     <p>{this.props.details.site}</p>
                     <p>{this.props.details.day}</p>
                     <p>{this.props.details.time}</p>
-                    <p>Email</p>
                 </div>
                 <div className="map-holder">
-                    <p>HOLDER FOR MAP</p>
                     <Map className="map" />
                     <div>
                         <button>Delete</button>

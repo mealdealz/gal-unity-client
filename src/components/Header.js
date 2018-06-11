@@ -13,7 +13,7 @@ class Header extends React.Component{
               <Form listingSubmitted={this.props.listingSubmitted} />
             </div>
           <div>
-            <img alt="Meal Dealz Logo" src={this.props.src}/>
+            <img className="banner" alt="Meal Dealz Logo" src={this.props.src}/>
           </div>
         </div>
   )
