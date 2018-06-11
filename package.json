@@ -1,0 +1,28 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Front-end for Galvanize-Unity",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "build": "react-scripts build",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJL85/gal-unity-client.git"
+  },
+  "author": "Elliot Jane Lader",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EJL85/gal-unity-client/issues"
+  },
+  "homepage": "https://github.com/EJL85/gal-unity-client#readme",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.4",
+    "cypress": "^3.0.1",
+    "ajv": "^6.5.1"
+  }
+}
