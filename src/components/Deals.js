@@ -9,12 +9,12 @@ class Deals extends React.Component {
         return(
             <div className="deal-card">
                 <div>
-                    <p>Deal Name</p>
-                    <p>{this.props.details.restaurant}</p>
-                    <p>{this.props.details.phone}</p>
-                    <p>{this.props.details.site}</p>
-                    <p>{this.props.details.day}</p>
-                    <p>{this.props.details.time}</p>
+                    <p>Restaurant: {this.props.details.restaurant}</p>
+                    <p>Deals: {this.props.details.specials}</p>
+                    <p>Phone: {this.props.details.phone}</p>
+                    <p>Website: {this.props.details.site}</p>
+                    <p>Days Open: {this.props.details.day}</p>
+                    <p>Hours: {this.props.details.time}</p>
                 </div>
                 <div className="map-holder">
                     <Map className="map" />
