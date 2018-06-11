@@ -4,11 +4,18 @@ import mapboxgl from 'mapbox-gl';
 class Map extends React.Component {
 
     componentDidMount() {
+<<<<<<< Updated upstream
         mapboxgl.accessToken = 'pk.eyJ1IjoiZWpsODUiLCJhIjoiY2ppMjRncWlzMDd0ZTNrbGc3M211amtqZyJ9.CBzEkAx9My7dS5jkzN2VMA';
         this.map = new mapboxgl.Map({
             container: this.mapContainer,
             style: 'mapbox://styles/mapbox/streets-v9'
         });
+=======
+        // this.map = new mapboxgl.Map({
+        //     container: this.mapContainer,
+        //     style: 'mapbox://styles/mapbox/streets-v9'
+        // });
+>>>>>>> Stashed changes
     }
 
     componentWillUnmount() {
