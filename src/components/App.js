@@ -7,7 +7,12 @@ import TimeFilter from './TimeFilter';
 class App extends React.Component {
     render() {
         return(
-          <div>
+            <div>
+                <head>
+                    <head>
+                        <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+                    </head>
+                </head>
             <Header src="images/mealDealzLogo.png"/>
               <TimeFilter/>
               <Deals />

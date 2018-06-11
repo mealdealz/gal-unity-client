@@ -3,3 +3,9 @@
     background: pink;
     justify-content: space-between;
 }
+
+.map {
+    position: absolute;
+    height: 3vh;
+    width: 3vw;
+}

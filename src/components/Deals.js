@@ -12,9 +12,9 @@ class Deals extends React.Component {
                     <p>Web</p>
                     <p>Email</p>
                 </div>
-                <div>
+                <div className="map-holder">
                     <p>HOLDER FOR MAP</p>
-                    <Map />
+                    <Map className="map" />
                     <img />
                 </div>
                 <div>
