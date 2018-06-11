@@ -9,3 +9,9 @@
     height: 3vh;
     width: 3vw;
 }
+
+.deal-card {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+}

@@ -36,7 +36,12 @@ class App extends React.Component {
             <Header listingSubmitted={this.listingSubmitted} src="images/mealDealzLogo.png"/>
             <main>
               <TimeFilter/>
-              <Deals />
+                <ul>
+                    {Object.keys(this.state.listings).map(key => <Deals
+                        key={key}
+                        details={this.state.listings[key]}
+                    />)}
+                </ul>
             </main>
             <Footer />
           </div>
