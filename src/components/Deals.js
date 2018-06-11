@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from './Map';
 
 class Deals extends React.Component {
     render() {
@@ -13,6 +14,7 @@ class Deals extends React.Component {
                 </div>
                 <div>
                     <p>HOLDER FOR MAP</p>
+                    <Map />
                     <img />
                 </div>
                 <div>

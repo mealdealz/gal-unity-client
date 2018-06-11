@@ -1,0 +1,5 @@
+.header-top {
+    display: flex;
+    background: pink;
+    justify-content: space-between;
+}
