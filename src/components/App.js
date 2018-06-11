@@ -8,11 +8,9 @@ class App extends React.Component {
     render() {
         return(
             <div>
-                <head>
-                    <head>
-                        <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-                    </head>
-                </head>
+            <head>
+                <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+            </head>
             <Header src="images/mealDealzLogo.png"/>
               <TimeFilter/>
               <Deals />
