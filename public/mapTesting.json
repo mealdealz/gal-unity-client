@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "restaurant": "Mezcal",
+    "days": "Daily",
+    "time": "3pm-6pm",
+    "specials": "$5 Margaritas, $3 Shishito Peppers, $3 Pupusas, $3.5 Tacos",
+    "site": "www.mezcalcolorado.com",
+    "phone": "3033225219",
+    "address": "3230 E Colfax Ave",
+    "location": [-104.948808, 39.740018]
+  },
+  {
+    "id": 2,
+    "restaurant": "Blue Sushi Sake Grill",
+    "days": "M-F",
+    "time": "3pm-6:30pm",
+    "specials": "$3.75 Wine, $3.5 Sake Bombs, $5.5 Rolls",
+    "site": "www.bluesushisakegrill.com",
+    "phone": "3036403655",
+    "address": "1628 16th St",
+    "location":  [-105.000560, 39.751516]
+  },
+  {
+    "id": 3,
+    "restaurant": "The Elms",
+    "days": "Daily",
+    "time": "4pm-7pm, 10pm-Close",
+    "specials": "$1 off Wine and Beer, $3.5 Sake Bombs, $5.5 Rolls",
+    "site": "www.theelmdenver.com",
+    "phone": "3033365763",
+    "address": "1209 E Colfax Ave",
+    "location": [-104.971736, 39.740285]
+  }
+]
