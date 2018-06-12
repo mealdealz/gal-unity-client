@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from './Form';
+import ButtonExample from './ButtonExample';
 
 class Header extends React.Component{
 
@@ -26,6 +27,7 @@ class Header extends React.Component{
           <div className="banner">
               <img alt="Meal Dealz Logo" src={this.props.src}/>
             <button onClick={this.showAddForm}>Add Deal</button>
+              <ButtonExample name="Jeff"/>
           </div>
             <div>
               <Form hidden={this.state.hidden} listingSubmitted={this.props.listingSubmitted} />

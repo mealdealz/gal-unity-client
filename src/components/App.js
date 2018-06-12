@@ -16,8 +16,7 @@ class App extends React.Component {
   componentDidMount() {
     fetch('./listings.json')
     .then(response => response.json())
-    .then(response => {
-      this.setState({listings: response})
+    .then(listings => {this.setState({listings})
     })
   }
 

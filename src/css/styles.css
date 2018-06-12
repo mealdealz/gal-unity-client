@@ -27,6 +27,11 @@ body {
   justify-content: space-around;
 }
 
+.time-filter-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*-------------Form--------------*/
 .form-container {
   width: 500px;
