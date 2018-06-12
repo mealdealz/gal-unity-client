@@ -10,11 +10,8 @@ class Deals extends React.Component {
             <div className="deal-card">
                 <div>
                     <p>Restaurant: {this.props.details.restaurant}</p>
-                    <p>Deals: {this.props.details.specials}</p>
                     <p>Phone: {this.props.details.phone}</p>
                     <p>Website: {this.props.details.site}</p>
-                    <p>Days Open: {this.props.details.day}</p>
-                    <p>Hours: {this.props.details.time}</p>
                 </div>
                 <div className="map-holder">
                     <Map className="map" latlon={this.props.details.location}/>
