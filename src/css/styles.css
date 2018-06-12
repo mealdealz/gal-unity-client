@@ -32,6 +32,11 @@ body {
   justify-content: space-evenly;
 }
 
+.logo {
+  height: 10vh;
+  width: 15vw;
+}
+
 /*-------------Form--------------*/
 .form-container {
   width: 500px;
