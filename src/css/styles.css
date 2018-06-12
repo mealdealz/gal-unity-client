@@ -23,7 +23,7 @@ body {
 
 .banner {
   display: flex;
-  background: #E1A265;
+  background: #f0f0f0;
   justify-content: space-around;
 }
 
@@ -33,13 +33,21 @@ body {
 }
 
 .logo {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
   height: 14vh;
   width: 15vw;
 }
 
 .ui.button.clickHere {
-  margin-top: 1.5vh;
+  margin-top: 2.5vh;
   height: 10vh;
+}
+
+.ui.cards.styledCards{
+  margin: 2vh 0 0 2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 /*-------------Form--------------*/

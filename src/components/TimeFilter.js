@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 class TimeFilter extends React.Component {
 
@@ -8,11 +9,26 @@ class TimeFilter extends React.Component {
 
     render() {
         return(
-        <div className="time-filter-buttons">
-            <button onClick={this.filterTime}>Lunch</button>
-            <button onClick={this.filterTime}>Happy Hour</button>
-            <button onClick={this.filterTime}>Dinner</button>
-        </div>
+          <Card.Group className="styledCards" itemsPerRow='3' centered={true}>
+          <Card>
+            <Image src="images/barbecue-bbq-delicious-3690.jpg" />
+            <Card.Content >
+              <Card.Header textAlign='center'>Happy Hour</Card.Header>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Image src="images/barbecue-bbq-delicious-3690.jpg" />
+            <Card.Content >
+              <Card.Header textAlign='center'>Lunch </Card.Header>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Image src="images/barbecue-bbq-delicious-3690.jpg" />
+            <Card.Content >
+              <Card.Header textAlign='center'>Dinner</Card.Header>
+            </Card.Content>
+          </Card>
+        </Card.Group >
         )
     }
 }
