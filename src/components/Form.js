@@ -31,6 +31,15 @@ class Form extends React.Component {
     )
   }
 
+  shower = () => {
+      if (this.props.hidden === true) {
+          return "form-container hidden";
+      } else {
+          return "form-container";
+      }
+  };
+
+
   handleChange = (event) => {
     this.setState(
       {[event.target.name]: event.target.value}
@@ -45,7 +54,7 @@ class Form extends React.Component {
 
   render() {
     return (
-      <aside className="form-container"id="side-bar">
+      <aside className={this.shower()} id="side-bar">
         <h3>Add a Deal</h3>
         <form className="form" onSubmit={this.onFormSubmit}>
           <label htmlFor="restaurant">Restaurant Name:</label>

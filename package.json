@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/EJL85/gal-unity-client/issues"
   },
-  "homepage": "https://github.com/EJL85/gal-unity-client#readme",
+  "homepage": "https://meal-dealz-client.firebaseapp.com",
   "dependencies": {
     "ajv": "^6.5.1",
     "cypress": "^3.0.1",

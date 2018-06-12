@@ -3,12 +3,6 @@ body {
   margin: 0px;
 }
 
-.header-top {
-  display: flex;
-  background: pink;
-  justify-content: space-between;
-}
-
 .map {
   position: absolute;
   height: 3vh;
@@ -19,6 +13,17 @@ body {
   display: flex;
   border-top: 1px solid black;
     border-bottom: 1px solid black;
+  justify-content: space-around;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.banner {
+  display: flex;
+  background: #E1A265;
   justify-content: space-around;
 }
 

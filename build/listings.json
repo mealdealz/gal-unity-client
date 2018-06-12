@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "restaurant": "Mezcal",
+    "days": "Daily",
+    "time": "3pm-6pm",
+    "specials": "$5 Margaritas, $3 Shishito Peppers, $3 Pupusas, $3.5 Tacos",
+    "site": "www.mezcalcolorado.com",
+    "phone": "3033225219",
+    "location": "3230 E Colfax Ave",
+    "image": "#"
+  },{
+  "id": 2,
+  "restaurant": "Blue Sushi Sake Grill",
+  "days": "M-F",
+  "time": "3pm-6:30pm",
+  "specials": "$3.75 Wine, $3.5 Sake Bombs, $5.5 Rolls",
+  "site": "www.bluesushisakegrill.com",
+  "phone": "3036403655",
+  "location": "1616 16th St",
+  "image": "#"
+},
+  {
+    "id": 3,
+    "restaurant": "The Elms",
+    "days": "Daily",
+    "time": "4pm-7pm, 10pm-Close",
+    "specials": "$1 off Wine and Beer, $3.5 Sake Bombs, $5.5 Rolls",
+    "site": "www.theelmdenver.com",
+    "phone": "3033365763",
+    "location": "1209 E Colfax Ave",
+    "image": "#"
+  },
+  {
+    "id": 4,
+    "restaurant": "Pub on Pearl",
+    "days": "M-F",
+    "time": "Open-7pm",
+    "specials": "$2 Bud and Bud Light, $3.5 Wells",
+    "site": "www.thepubonpearl.com",
+    "phone": "303777676",
+    "location": "1101 S Pearl Street",
+    "image": "#"
+  },
+  {
+    "id": 5,
+    "restaurant": "Illegal Pete's",
+    "days": "M-Sat",
+    "time": "3pm-8pm",
+    "specials": "$4.5 Margaritas, $3.5 Wells, $3 Bud Light",
+    "site": "www.illegalpetes.co",
+    "phone": "3036232169",
+    "location": "1530 16th St",
+    "image": "#"
+  }
+]
