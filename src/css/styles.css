@@ -33,8 +33,13 @@ body {
 }
 
 .logo {
-  height: 10vh;
+  height: 14vh;
   width: 15vw;
+}
+
+.ui.button.clickHere {
+  margin-top: 1.5vh;
+  height: 10vh;
 }
 
 /*-------------Form--------------*/

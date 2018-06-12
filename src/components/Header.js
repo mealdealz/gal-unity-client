@@ -1,6 +1,7 @@
 import React from 'react'
 import Form from './Form';
 import ButtonExample from './ButtonExample';
+import {Button} from 'semantic-ui-react';
 
 class Header extends React.Component{
 
@@ -26,8 +27,7 @@ class Header extends React.Component{
         <div>
           <div className="banner">
               <img className="logo" alt="Meal Dealz Logo" src={this.props.src}/>
-            <button onClick={this.showAddForm}>Add Deal</button>
-              <ButtonExample name="Jeff"/>
+            <Button onClick={this.showAddForm} className="clickHere" content='Add Deal' />
           </div>
             <div>
               <Form hidden={this.state.hidden} listingSubmitted={this.props.listingSubmitted} />
