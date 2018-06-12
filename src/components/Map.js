@@ -11,6 +11,11 @@ class Map extends React.Component {
             center: this.props.latlon,
             zoom: 16
         });
+
+        var marker = new mapboxgl.Marker()
+            .setLngLat(this.props.latlon)
+            .addTo(this.map);
+
     }
 
     componentWillUnmount() {
