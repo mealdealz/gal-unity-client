@@ -7,8 +7,15 @@ class Map extends React.Component {
         mapboxgl.accessToken = 'pk.eyJ1IjoiZWpsODUiLCJhIjoiY2ppMjRncWlzMDd0ZTNrbGc3M211amtqZyJ9.CBzEkAx9My7dS5jkzN2VMA';
         this.map = new mapboxgl.Map({
             container: this.mapContainer,
-            style: 'mapbox://styles/mapbox/streets-v9'
+            style: 'mapbox://styles/mapbox/streets-v9',
+            center: this.props.latlon,
+            zoom: 16
         });
+
+        var marker = new mapboxgl.Marker()
+            .setLngLat(this.props.latlon)
+            .addTo(this.map);
+
     }
 
     componentWillUnmount() {
@@ -18,8 +25,8 @@ class Map extends React.Component {
     render() {
         const style = {
             container: 'map-holder',
-                width: '10vw',
-                height: '20vh'
+                width: '100%',
+                height: '90%'
         };
 
         return (

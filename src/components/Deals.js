@@ -17,7 +17,7 @@ class Deals extends React.Component {
                     <p>Hours: {this.props.details.time}</p>
                 </div>
                 <div className="map-holder">
-                    <Map className="map" />
+                    <Map className="map" latlon={this.props.details.location}/>
                     <div>
                         <button>Delete</button>
                         <button>Submit</button>
