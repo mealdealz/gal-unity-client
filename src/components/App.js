@@ -9,22 +9,14 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      listings: [],
-        mapTesting: []
+      listings: []
     }
   }
-
-  // componentDidMount() {
-  //   fetch('./listings.json')
-  //   .then(response => response.json())
-  //   .then(listings => {this.setState({listings})
-  //   })
-  // }
 
     componentDidMount() {
         fetch('./mapTesting.json')
             .then(response => response.json())
-            .then(mapTesting => {this.setState({mapTesting})
+            .then(listings => {this.setState({listings})
             })
     }
 
@@ -43,9 +35,9 @@ class App extends React.Component {
             <Header listingSubmitted={this.listingSubmitted} src="images/mealDealzLogo.png"/>
             <main>
               <TimeFilter/>
-                    {Object.keys(this.state.mapTesting).map(key => <Deals
+                    {Object.keys(this.state.listings).map(key => <Deals
                         key={key}
-                        details={this.state.mapTesting[key]}
+                        details={this.state.listings[key]}
                     />)}
             </main>
             <Footer />
