@@ -12,7 +12,7 @@ body {
 .deal-card {
   display: flex;
   border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
   justify-content: space-around;
 }
 
@@ -36,7 +36,8 @@ body {
 }
 
 .form input,
-.form textarea {
+.form textarea,
+.form fieldset {
   width: 100%;
   padding: 12px 20px;
   margin: 10px auto 10px auto;
