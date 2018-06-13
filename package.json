@@ -22,6 +22,8 @@
     "ajv": "^6.5.1",
     "cypress": "^3.0.1",
     "mapbox-gl": "^0.44.0",
+    "moment": "^2.22.2",
+    "rc-time-picker": "^3.3.1",
     "react": "^16.4.0",
     "react-dom": "16.4.0",
     "react-mapbox-gl": "^3.8.0",
