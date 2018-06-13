@@ -5,11 +5,7 @@ class Days extends React.Component {
 
     dayGiver = (days) => {
 
-        console.log(days);
-
         let dayArray = [];
-
-        console.log("dayArray = " + dayArray);
 
         for (let i = 0; i < days.length; i++) {
             if (days[i] !== false) {

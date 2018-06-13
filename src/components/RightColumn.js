@@ -4,9 +4,6 @@ import Specials from './Specials';
 
 class RightColumn extends React.Component {
     render() {
-
-        console.table(this.props.details.deals);
-
         return(
             <div>
                 {Object.keys(this.props).map(key => <Days
