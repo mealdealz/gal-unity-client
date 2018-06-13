@@ -3,10 +3,19 @@ body {
   margin: 0px;
 }
 
-.map {
+.appBackgroundColor {
+  background: #f0f0f0;
+}
+
+/* .map {
   position: absolute;
-  height: 3vh;
-  width: 3vw;
+  height: 10vh;
+  width: 10vw;
+} */
+
+.magicPadding {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .deal-card {
@@ -23,7 +32,7 @@ body {
 
 .banner {
   display: flex;
-  background: #f0f0f0;
+  /* background: #f0f0f0; */
   justify-content: space-around;
 }
 
@@ -45,9 +54,16 @@ body {
 }
 
 .ui.cards.styledCards{
-  margin: 2vh 0 0 2vh;
+  /* margin: 2vh 0 0 2vh; */
   padding-left: 1vw;
   padding-right: 1vw;
+  padding-top: 1vw;
+}
+
+.ui.cards.dealsCards {
+  padding-left: 1vw;
+  padding-right: 1vw;
+
 }
 
 /*-------------Form--------------*/

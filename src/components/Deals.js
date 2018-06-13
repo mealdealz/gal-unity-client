@@ -6,13 +6,13 @@ class Deals extends React.Component {
     render() {
         console.table(this.props.details);
         return (
-            <div>
-                <Card.Group centered={true}>
-                <Card>
+            <div className="appBackgroundColor">
+                <Card.Group className="dealsCards" centered={true}>
+                    <Card fluid>
                     <Card.Content>
                         <Grid columns="equal">
                             <Grid.Row>
-                                <Grid.Column>
+                                    <Grid.Column>
                                     <Card.Description content={`Restaurant: ${this.props.details.restaurant}`}>
                                     </Card.Description>
                                     <Card.Description content={`Phone: ${this.props.details.phone}`}>
@@ -29,13 +29,7 @@ class Deals extends React.Component {
                                     </Card.Description>
                                 </Grid.Column>
                                 <Grid.Column>
-                                    {/* <div className="map-holder"> */}
-                                        <Map className="map" latlon={this.props.details.location}/>
-                                        {/* <div> */}
-                                            <Button content="Delete" />
-                                            <Button content="Submit" />
-                                        {/* </div> */}
-                                    {/* </div> */}
+                                    <Map className="map" latlon={this.props.details.location}/>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -48,4 +42,3 @@ class Deals extends React.Component {
 }
 
 export default Deals;
-

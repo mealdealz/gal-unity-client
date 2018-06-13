@@ -25,7 +25,7 @@ class Header extends React.Component{
   render() {
     return (
         <div>
-          <div className="banner">
+          <div className="banner appBackgroundColor">
               <img className="logo" alt="Meal Dealz Logo" src={this.props.src}/>
             <Button onClick={this.showAddForm} className="clickHere" content='Add Deal' />
           </div>

@@ -8,7 +8,8 @@ class TimeFilter extends React.Component {
     };
 
     render() {
-        return(
+      return (
+          <div className="appBackgroundColor">
           <Card.Group className="styledCards" itemsPerRow='3' centered={true}>
           <Card>
             <Image src="images/barbecue-bbq-delicious-3690.jpg" />
@@ -28,7 +29,9 @@ class TimeFilter extends React.Component {
               <Card.Header textAlign='center'>Dinner</Card.Header>
             </Card.Content>
           </Card>
-        </Card.Group >
+          </Card.Group>
+          </div>
+
         )
     }
 }
