@@ -15,9 +15,7 @@ class Deals extends React.Component {
                         <Grid columns="equal">
                             <Grid.Row divided stretched>
                                 <Grid.Column>
-                                    <Segment>
-                                        <strong>{this.props.details.restaurant}</strong>
-                                    </Segment>
+                                        <h2>{this.props.details.restaurant}</h2>
                                     <LeftColumn details={this.props.details}/>
                                 </Grid.Column>
                                 <Grid.Column>

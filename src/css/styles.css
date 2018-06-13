@@ -96,7 +96,3 @@ body {
 .form input[type=submit]:hover {
   color: #dadada;
 }
-
-input.rc-time-picker-input {
-  width: 12.5vw;
-}
