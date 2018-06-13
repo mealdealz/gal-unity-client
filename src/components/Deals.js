@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, Button } from 'semantic-ui-react';
+import { Grid, Card, Segment } from 'semantic-ui-react';
 import Map from './Map';
 
 class Deals extends React.Component {
@@ -11,11 +11,15 @@ class Deals extends React.Component {
                     <Card fluid>
                     <Card.Content>
                         <Grid columns="equal">
-                            <Grid.Row>
+                            <Grid.Row divided stretched>
                                     <Grid.Column>
-                                    <Card.Description content={`Restaurant: ${this.props.details.restaurant}`}>
-                                    </Card.Description>
-                                    <Card.Description content={`Phone: ${this.props.details.phone}`}>
+
+                                        <Card.Description content={`Restaurant`}>
+                                        <Segment>
+                                        {`${this.props.details.restaurant}`}
+                                        </Segment>
+                                        </Card.Description>
+                                        <Card.Description content={`Phone: ${this.props.details.phone}`}>
                                     </Card.Description>
                                     <Card.Description content={`Website: ${this.props.details.site}`}>
                                     </Card.Description>
@@ -28,7 +32,7 @@ class Deals extends React.Component {
                                     <Card.Description content={`Today's Special: ${this.props.details.special}`}>
                                     </Card.Description>
                                 </Grid.Column>
-                                <Grid.Column>
+                                <Grid.Column style={{height: 300}}>
                                     <Map className="map" latlon={this.props.details.location}/>
                                 </Grid.Column>
                             </Grid.Row>
