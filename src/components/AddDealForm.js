@@ -2,7 +2,7 @@ import React from 'react';
 import TimePicker from 'rc-time-picker';
 import 'rc-time-picker/assets/index.css';
 import moment from 'moment';
-import { Form, Button, Input, Checkbox, Modal } from 'semantic-ui-react';
+import { Form, Button, Modal } from 'semantic-ui-react';
 
 class AddDealForm extends React.Component {
 
@@ -66,7 +66,8 @@ class AddDealForm extends React.Component {
                 <Form.Input placeholder='Website' />
               </Form.Field>
               <Form.Field>
-                <Form.Group>
+              <label>Days of Special</label>
+                <Form.Group unstackable inline widths='equal'>
                   <Form.Checkbox inline label='M' required />
                   <Form.Checkbox inline label='T' required />
                   <Form.Checkbox inline label='W' required />
@@ -75,10 +76,13 @@ class AddDealForm extends React.Component {
                   <Form.Checkbox inline label='Sat' required />
                   <Form.Checkbox inline label='Sun' required />
                 </Form.Group>
-                <TimePicker name="Start Time" showSecond={false} defaultValue={now} className="xxx" onChange={onChange} format={format} use12Hours inputReadOnly />
-                <TimePicker name="End Time" showSecond={false} defaultValue={now} className="xxx" onChange={onChange} format={format} use12Hours inputReadOnly />
-                <Form.Input placeholder='Special' />
-                <Form.Input placeholder='' />
+                <Form.Group unstackable inline widths='equal'>
+                  <label>Start Time</label>
+                  <TimePicker className="timefield" showSecond={false} defaultValue={now} className="xxx" onChange={onChange} format={format} use12Hours />
+                  <label>End Time</label>
+                  <TimePicker className="timefield" showSecond={false} defaultValue={now} className="xxx" onChange={onChange} format={format} use12Hours />
+                </Form.Group>
+                <Form.Field placeholder='Special' control='textarea' rows='3' />
                 <Button type='submit'>Submit</Button>
               </Form.Field>
               </Form.Group>
