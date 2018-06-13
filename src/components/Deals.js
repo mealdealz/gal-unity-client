@@ -1,7 +1,6 @@
 import React from 'react';
-import Map from './Map';
 import { Grid, Card, Button } from 'semantic-ui-react';
-
+import Map from './Map';
 
 class Deals extends React.Component {
     render() {
@@ -11,9 +10,9 @@ class Deals extends React.Component {
                 <Card.Group centered={true}>
                 <Card>
                     <Card.Content>
-                        <Grid>
+                        <Grid columns="equal">
                             <Grid.Row>
-                                <Grid.Column width={10}>
+                                <Grid.Column>
                                     <Card.Description content={`Restaurant: ${this.props.details.restaurant}`}>
                                     </Card.Description>
                                     <Card.Description content={`Phone: ${this.props.details.phone}`}>
@@ -25,18 +24,18 @@ class Deals extends React.Component {
                                     <Card.Description content={`Hours: ${this.props.details.time}`}>
                                     </Card.Description>
                                 </Grid.Column>
-                                <Grid.Column width={30}>
-                                    <Card.Description content={`Today's Specials: ${this.props.details.special}`}>
+                                <Grid.Column>
+                                    <Card.Description content={`Today's Special: ${this.props.details.special}`}>
                                     </Card.Description>
                                 </Grid.Column>
-                                <Grid.Column width={40}>
-                                    <div className="map-holder">
+                                <Grid.Column>
+                                    {/* <div className="map-holder"> */}
                                         <Map className="map" latlon={this.props.details.location}/>
-                                        <div>
+                                        {/* <div> */}
                                             <Button content="Delete" />
                                             <Button content="Submit" />
-                                        </div>
-                                    </div>
+                                        {/* </div> */}
+                                    {/* </div> */}
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
