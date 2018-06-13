@@ -48,10 +48,10 @@ body {
   width: 15vw;
 }
 
-.ui.button.clickHere {
+/* .ui.button.clickHere {
   margin-top: 2.5vh;
   height: 10vh;
-}
+} */
 
 .ui.cards.styledCards{
   /* margin: 2vh 0 0 2vh; */
@@ -66,33 +66,18 @@ body {
 
 }
 
-/*-------------Form--------------*/
-.form-container {
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
+.ui.form {
+  padding: 1vh;
 }
 
-.form input,
-.form textarea,
-.form fieldset {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 10px auto 10px auto;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
+.ui.input {
+  padding: .5vh;
 }
 
-.form input[type=submit] {
-  color: #fff;
-  background-color: #d55a35;
-  cursor: pointer;
+.endLabel {
+  padding-left: 1vw;
 }
 
-.form input[type=submit]:hover {
-  color: #dadada;
+button.ui.button {
+  margin-top: 1vh;
 }
