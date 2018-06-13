@@ -1,7 +1,6 @@
 import React from 'react'
-import Form from './Form';
-import ButtonExample from './ButtonExample';
-import {Button} from 'semantic-ui-react';
+import AddDealForm from './AddDealForm';
+import {Button, Form} from 'semantic-ui-react';
 
 class Header extends React.Component{
 

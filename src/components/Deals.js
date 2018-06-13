@@ -12,14 +12,13 @@ class Deals extends React.Component {
                     <Card.Content>
                         <Grid columns="equal">
                             <Grid.Row divided stretched>
-                                    <Grid.Column>
-
-                                        <Card.Description content={`Restaurant`}>
-                                        <Segment>
-                                        {`${this.props.details.restaurant}`}
-                                        </Segment>
-                                        </Card.Description>
-                                        <Card.Description content={`Phone: ${this.props.details.phone}`}>
+                                <Grid.Column>
+                                    <Card.Description content={`Restaurant`}>
+                                    <Segment>
+                                    {`${this.props.details.restaurant}`}
+                                    </Segment>
+                                    </Card.Description>
+                                    <Card.Description content={`Phone: ${this.props.details.phone}`}>
                                     </Card.Description>
                                     <Card.Description content={`Website: ${this.props.details.site}`}>
                                     </Card.Description>
