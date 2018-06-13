@@ -11,19 +11,19 @@ class TimeFilter extends React.Component {
       return (
           <div className="appBackgroundColor">
           <Card.Group className="styledCards" itemsPerRow='3' centered={true}>
-          <Card>
+          <Card onClick={this.filterTime}>
             <Image src="images/barbecue-bbq-delicious-3690.jpg" />
             <Card.Content >
               <Card.Header textAlign='center'>Happy Hour</Card.Header>
             </Card.Content>
           </Card>
-          <Card>
+          <Card onClick={this.filterTime}>
             <Image src="images/barbecue-bbq-delicious-3690.jpg" />
             <Card.Content >
               <Card.Header textAlign='center'>Lunch </Card.Header>
             </Card.Content>
           </Card>
-          <Card>
+          <Card onClick={this.filterTime}>
             <Image src="images/barbecue-bbq-delicious-3690.jpg" />
             <Card.Content >
               <Card.Header textAlign='center'>Dinner</Card.Header>
