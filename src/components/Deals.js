@@ -14,11 +14,6 @@ class Deals extends React.Component {
                     <Card.Content>
                         <Grid columns="equal">
                             <Grid.Row divided stretched>
-                                    <Grid.Column>
-                                        <Segment>
-                                            <strong>{`${this.props.details.restaurant}`}</strong>
-                                        </Segment>
-                                        <LeftColumn details={this.props.details}/>
                                 </Grid.Column>
                                 <Grid.Column>
                                     {Object.keys(this.props.details.specials).map(key => <RightColumn
