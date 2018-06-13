@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Button, Input } from 'semantic-ui-react';
+import { Form, Button, Input, Modal } from 'semantic-ui-react';
 
 class AddDealForm extends React.Component {
 
@@ -46,24 +46,28 @@ class AddDealForm extends React.Component {
   render() {
     return (
       <div>
+        <Modal trigger={<Button>Show Modal</Button>} centered={false}>
          <Form>
-            <Form.Group unstackable widths={1}>
-              <Form.Input placeholder='Restaurants' />
-              <Form.Input placeholder='Address' />
-              <Form.Input placeholder='Phone Number' />
-              <Form.Input placeholder='Website' />
-            </Form.Group>
-            <Form.Group widths={2}>
-              <Form.Input label='Address' placeholder='Address' />
-              <Form.Input label='Phone' placeholder='Phone' />
-            </Form.Group>
-            <Form.Checkbox label='I agree to the Terms and Conditions' />
-            <Button type='submit'>Submit</Button>
-        </Form>
+             <Form.Group unstackable widths='equal'>
+              <Form.Field>
+                <Form.Input placeholder='Restaurant Name' />
+                <Form.Input placeholder='Address' />
+                <Form.Input placeholder='Phone Number' />
+                <Form.Input placeholder='Website' />
+              </Form.Field>
+              <Form.Field>
+                <Form.Input placeholder='Address' />
+                <Form.Input placeholder='Phone' />
+                <Form.Checkbox label='I agree to the Terms and Conditions' />
+                <Button type='submit'>Submit</Button>
+              </Form.Field>
+              </Form.Group>
+         </Form>
+        </Modal>
       </div>
     );
   }
 }
 
 
-export default Form;
+export default AddDealForm;
