@@ -41,7 +41,7 @@
         "cost": 5.5}]
   },{
     "special_id": 2,
-    "category": "Happy Hour",
+    "category": "Dinner",
     "days":  [true, true, true, true, true, true, true],
     "start_time": 2200,
     "end_time": 200,
