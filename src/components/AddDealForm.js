@@ -91,7 +91,7 @@ class AddDealForm extends React.Component {
     "restaurantLocation": [],
     "restaurantSpecials": [{
       "specialCategory": this.state.specialCategory,
-      "specialDays":  [],
+      "specialDays":  this.state.specialDays,
       "startTime": this.state.startTime,
       "endTime": this.state.endTime,
       "deals": [{"dealName": this.state.dealName,
@@ -140,10 +140,7 @@ class AddDealForm extends React.Component {
     )
    }
 
-  dateArrayFucntion() {
-    const dateArray = ['S', 'M', 'T', 'W', 'Th', 'F', 'S']
 
-  }
 
 
   render() {
@@ -155,6 +152,15 @@ class AddDealForm extends React.Component {
     function onChange(value) {
       console.log(value && value.format(format));
     }
+
+    function dateArrayFunction() {
+      const dateArray = ['S', 'M', 'T', 'W', 'Th', 'F', 'S']
+      for (var i = 0; i < dateArray.length; i++) {
+        return dateArray[i]
+      }
+
+    }
+
     return (
       <div>
         <Modal trigger={<Button>Add a deal</Button>} centered={false}>
@@ -172,15 +178,16 @@ class AddDealForm extends React.Component {
               <Form.Field>
               <label>Days of Special</label>
                 <Form.Group inline widths='equal'>
-                  <Form.Checkbox   />
-                    {Object.keys(this.state.restaurantSpecials.specialDays).map(key => <Form.Checkbox
+                    <Form.Field>
+                    {Object.keys(this.state.restaurantSpecials).map(key => <Form.Checkbox
                         key={key}
-                    details={this.state.listings[key]}
+                    details={this.state.listings}
                     name="specialDays"
                     value={this.state.restaurantSpecials.specialDays}
                     onChange={this.handleChange}
-                    inline label={}
+                    inline label={dateArrayFunction()}
                     />)}
+                    </Form.Field>
                 </Form.Group>
                 <Form.Group inline widths='equal'>
                 <Form.Field label='Timeframe' control='select' value={this.state.restaurantSpecials[0].category} onChange={this.handleChange}>
