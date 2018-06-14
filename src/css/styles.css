@@ -41,12 +41,6 @@ body {
   justify-content: space-evenly;
 }
 
-.logo {
-  margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
-  height: 14vh;
-  width: 15vw;
-}
 
 /* .ui.button.clickHere {
   margin-top: 2.5vh;
@@ -80,4 +74,17 @@ body {
 
 button.ui.button {
   margin-top: 1vh;
+  justify-content: flex-end;
+}
+
+div.ui.borderless.menu {
+  margin-top: 0;
+}
+
+menu {
+  display: flex;
+}
+
+modal {
+  justify-content: flex-end;
 }

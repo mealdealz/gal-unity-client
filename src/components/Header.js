@@ -1,19 +1,28 @@
 import React from 'react'
 import AddDealForm from './AddDealForm';
-import {Button} from 'semantic-ui-react';
+import {Button, Menu, Image } from 'semantic-ui-react';
 
 class Header extends React.Component{
-  render() {
-    return (
-        <div>
-          <div className="banner appBackgroundColor">
-              <img className="logo" alt="Meal Dealz Logo" src={this.props.src}/>
-              <AddDealForm  listingSubmitted={this.props.listingSubmitted} />
-          </div>
 
-        </div>
-  )
-}
+    state = {}
+
+    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+    render() {
+      const { activeItem } = this.state
+
+      return (
+        <Menu unstackable borderless>
+          <Menu.Item className="appBackgroundColor">
+            <Image size='small' alt="Meal Dealz Logo" src={this.props.src}/>
+          </Menu.Item>
+
+          <Menu.Item position='right' >
+            <AddDealForm  listingSubmitted={this.props.listingSubmitted} />
+          </Menu.Item>
+        </Menu>
+      )
+    }
 }
 
 export default Header
