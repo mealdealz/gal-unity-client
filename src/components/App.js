@@ -37,7 +37,7 @@ class App extends React.Component {
             <head>
                 <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
             </head>
-            <Header listingSubmitted={this.listingSubmitted} src="images/LOGO.jpg"/>
+            <Header listingSubmitted={this.listingSubmitted} listings={this.state.listings} src="images/LOGO.jpg"/>
             <main>
               <TimeFilter filterTime={this.filterTime}/>
                     {Object.keys(this.state.listings).map(key => <Deals

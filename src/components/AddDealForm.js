@@ -2,6 +2,7 @@ import React from 'react';
 import TimePicker from 'rc-time-picker';
 import 'rc-time-picker/assets/index.css';
 import moment from 'moment';
+import Deals from './Deals.js'
 import { Form, Button, Modal } from 'semantic-ui-react';
 
 class AddDealForm extends React.Component {
@@ -9,13 +10,25 @@ class AddDealForm extends React.Component {
   state = {
     "id": "",
     "restaurant": "",
-    "days": "",
-    "time": "",
-    "specials": "",
     "site": "",
     "phone": "",
-    "location": "",
-    "image": ""
+    "address": "",
+    "location": [],
+    "specials": [{
+      "special_id": "",
+      "category": "",
+      "days":  [],
+      "start_time": "",
+      "end_time": "",
+      "deals": [{"name": "",
+        "cost": ""},
+        {"name": "",
+          "cost": ""},
+        {"name": "",
+          "cost": ""},
+        {"name":"",
+          "cost":""}]
+    }]
   }
 
   resetForm = () => {
@@ -23,14 +36,25 @@ class AddDealForm extends React.Component {
       {
         "id": "",
         "restaurant": "",
-        "days": "",
-        "time": "",
-        "specials": "",
         "site": "",
         "phone": "",
-        "location": "",
-        "image": ""
-      }
+        "address": "",
+        "location": [],
+        "specials": [{
+          "special_id": "",
+          "category": "",
+          "days":  [],
+          "start_time": "",
+          "end_time": "",
+          "deals": [{"name": "",
+            "cost": ""},
+            {"name": "",
+              "cost": ""},
+            {"name": "",
+              "cost": ""},
+            {"name":"",
+              "cost":""}]
+      }]}
     )
   }
 
@@ -57,13 +81,13 @@ class AddDealForm extends React.Component {
     return (
       <div>
         <Modal trigger={<Button>Add a deal</Button>} centered={false}>
-         <Form>
+         <Form onSubmit={this.onFormSubmit}>
              <Form.Group widths='equal'>
               <Form.Field>
-                <Form.Input placeholder='Restaurant Name' />
-                <Form.Input placeholder='Address' />
-                <Form.Input placeholder='Phone Number' />
-                <Form.Input placeholder='Website' />
+                <Form.Input placeholder='Restaurant Name' value={this.state.restaurant} onChange={this.handleChange} />
+                <Form.Input placeholder='Address' value={this.state.address} onChange={this.handleChange} />
+                <Form.Input placeholder='Phone Number' value={this.state.phone} onChange={this.handleChange}/>
+                <Form.Input placeholder='Website' value={this.state.site} onChange={this.handleChange} />
               </Form.Field>
               <Form.Field>
               <label>Days of Special</label>
@@ -77,7 +101,7 @@ class AddDealForm extends React.Component {
                   <Form.Checkbox inline label='Sun'/>
                 </Form.Group>
                 <Form.Group inline widths='equal'>
-                <Form.Field label='Timeframe' control='select'>
+                <Form.Field label='Timeframe' control='select' value={this.state.specials[0].category} onChange={this.handleChange}>
                   <option value='Happy Hour'>Happy Hour</option>
                   <option value='lunch'>Lunch</option>
                   <option value='dinner'>Dinner</option>
@@ -87,6 +111,10 @@ class AddDealForm extends React.Component {
                 <Button type='submit'>Submit</Button>
               </Form.Field>
               </Form.Group>
+                {Object.keys(this.state.listings).map(key => <Deals
+                  key={key}
+                  details={this.state.listings[key]}
+              />)}
          </Form>
         </Modal>
       </div>
