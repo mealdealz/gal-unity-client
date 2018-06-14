@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, Segment } from 'semantic-ui-react';
+import { Grid, Card, Segment, Header } from 'semantic-ui-react';
 import Map from './Map';
 import LeftColumn from './LeftColumn';
 import RightColumn from './RightColumn';
@@ -15,7 +15,7 @@ class Deals extends React.Component {
                         <Grid columns="equal">
                             <Grid.Row divided stretched>
                                 <Grid.Column>
-                                        <h2>{this.props.details.restaurant}</h2>
+                                        <Header as='h2' textAlign='center'>{this.props.details.restaurant}</Header>
                                     <LeftColumn details={this.props.details}/>
                                 </Grid.Column>
                                 <Grid.Column>
