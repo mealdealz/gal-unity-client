@@ -56,7 +56,7 @@ class AddDealForm extends React.Component {
     }
     return (
       <div>
-        <Modal trigger={<Button>Show Modal</Button>} centered={false}>
+        <Modal trigger={<Button>Add a deal</Button>} centered={false}>
          <Form>
              <Form.Group widths='equal'>
               <Form.Field>
