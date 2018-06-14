@@ -4,7 +4,7 @@
   "description": "Front-end for Galvanize-Unity",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
+    "test": "npx cypress run",
     "build": "react-scripts build",
     "start": "react-scripts start"
   },

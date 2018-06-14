@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://meal-dealz-client.firebaseapp.com/",
+  "integrationFolder": "cypress/test",
+  "video": false
+}
