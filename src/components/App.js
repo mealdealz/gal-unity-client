@@ -24,9 +24,14 @@ class App extends React.Component {
       this.setState({
         listings: this.state.listings.concat(deal).reverse()
       })
-    }
+    };
+
+    filterTime = (className) => {
+        console.log(className);
+    };
 
     render() {
+
         return(
             <div>
             <head>
@@ -34,7 +39,7 @@ class App extends React.Component {
             </head>
             <Header listingSubmitted={this.listingSubmitted} src="images/mealDealzLogo.png"/>
             <main>
-              <TimeFilter/>
+              <TimeFilter filterTime={this.filterTime}/>
                     {Object.keys(this.state.listings).map(key => <Deals
                         key={key}
                         details={this.state.listings[key]}
