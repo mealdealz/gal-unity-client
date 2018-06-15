@@ -13,8 +13,11 @@ class App extends React.Component {
     }
   }
 
+
+    // When database accepts CORS, switch which fetch method is commented
     componentDidMount() {
         fetch('./mapTesting.json')
+        // fetch('https://galvanizespecials.herokuapp.com/products')
             .then(response => response.json())
             .then(listings => {this.setState({listings})
             })
