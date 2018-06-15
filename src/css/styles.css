@@ -73,8 +73,9 @@ body {
 }
 
 button.ui.button {
-  margin-top: 1vh;
-  justify-content: flex-end;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  /* justify-content: flex-end; */
 }
 
 div.ui.borderless.menu {
@@ -88,3 +89,4 @@ menu {
 modal {
   justify-content: flex-end;
 }
+

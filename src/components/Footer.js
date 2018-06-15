@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => (
-  <div className='appBackgroundColor'>
+  <div className='footer'>
     <h4 className='copyright'>Copyright 2018</h4>
   </div>
 )

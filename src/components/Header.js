@@ -17,7 +17,9 @@ class Header extends React.Component{
             <Image size='small' alt="Meal Dealz Logo" src={this.props.src}/>
           </Menu.Item>
 
-          <Menu.Item position='right' >
+          <Menu.Item position='right'>
+            <Button style={{"marginLeft": "10px"}} type='submit'>Sign up</Button>
+            <Button style={{"marginLeft": "10px"}} type='submit'>Login</Button>
             <AddDealForm  listingSubmitted={this.props.listingSubmitted} />
           </Menu.Item>
         </Menu>

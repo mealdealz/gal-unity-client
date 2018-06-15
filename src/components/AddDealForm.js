@@ -91,7 +91,7 @@ class AddDealForm extends React.Component {
     "restaurantLocation": [],
     "restaurantSpecials": [{
       "specialCategory": this.state.specialCategory,
-      "specialDays":  this.state.specialDays,
+      "specialDays":  [],
       "startTime": this.state.startTime,
       "endTime": this.state.endTime,
       "deals": [{"dealName": this.state.dealName,
@@ -140,9 +140,6 @@ class AddDealForm extends React.Component {
     )
    }
 
-
-
-
   render() {
 
     const format = 'h:mm a';
@@ -152,49 +149,50 @@ class AddDealForm extends React.Component {
     function onChange(value) {
       console.log(value && value.format(format));
     }
-
-    function dateArrayFunction() {
-      const dateArray = ['S', 'M', 'T', 'W', 'Th', 'F', 'S']
-      for (var i = 0; i < dateArray.length; i++) {
-        return dateArray[i]
-      }
-
-    }
-
     return (
       <div>
         <Modal trigger={<Button>Add a deal</Button>} centered={false}>
          <Form onSubmit={this.onFormSubmit}>
-             <Form.Group widths='equal'>
+            <Form.Group widths='equal'>
               <Form.Field>
-                {}
                 <Form.Input placeholder='Restaurant Name' name="restaurantName" value={this.state.restaurantName} onChange={this.handleChange} />
                 <Form.Input placeholder='Address' name="restaurantAddress" value={this.state.restaurantAddress} onChange={this.handleChange} />
                 <Form.Input placeholder='Phone Number' name="restaurantPhone" value={this.state.restaurantPhone} onChange={this.handleChange}/>
                 <Form.Input placeholder='Website' name="restaurantSite" value={this.state.restuarantSite} onChange={this.handleChange} />
-
-                {/* <Form.Input placeholder='dealName' value={this.state.dealName} onChange={this.handleChangeDeal(3)} /> */}
               </Form.Field>
-              <Form.Field>
+            <Form.Field>
               <label>Days of Special</label>
                 <Form.Group inline widths='equal'>
-                    <Form.Field>
-                    {Object.keys(this.state.restaurantSpecials).map(key => <Form.Checkbox
+                  <Form.Checkbox label='S' />
+                  <Form.Checkbox label='M' />
+                  <Form.Checkbox label='T' />
+                  <Form.Checkbox label='W' />
+                  <Form.Checkbox label='Th' />
+                  <Form.Checkbox label='F' />
+                  <Form.Checkbox label='S' />
+                    {/* {Object.keys(this.state.restaurantSpecials.specialDays).map(key => <Form.Checkbox
                         key={key}
-                    details={this.state.listings}
+                    details={this.state.listings[key]}
                     name="specialDays"
                     value={this.state.restaurantSpecials.specialDays}
                     onChange={this.handleChange}
-                    inline label={dateArrayFunction()}
-                    />)}
-                    </Form.Field>
+                    inline label={}
+                    />)} */}
                 </Form.Group>
                 <Form.Group inline widths='equal'>
-                <Form.Field label='Timeframe' control='select' value={this.state.restaurantSpecials[0].category} onChange={this.handleChange}>
-                  <option value='Happy Hour'>Happy Hour</option>
-                  <option value='lunch'>Lunch</option>
-                  <option value='dinner'>Dinner</option>
-                </Form.Field>
+                  <Form.Field label='Timeframe' control='select' value={this.state.restaurantSpecials[0].category} onChange={this.handleChange}>
+                    <option value='Happy Hour'>Happy Hour</option>
+                    <option value='lunch'>Lunch</option>
+                    <option value='dinner'>Dinner</option>
+                  </Form.Field>
+                  <Form.Field>
+                    <label>Deal</label>
+                    <input placeholder='Deal' />
+                  </Form.Field>
+                  <Form.Field>
+                    <label>Cost</label>
+                    <input placeholder='Cost' />
+                  </Form.Field>
                 </Form.Group>
                 {/* <Form.Input placeholder='dealName' value={this.state.dealName} onChange={this.handleChangeDeal(3)} />
                 <Form.Input placeholder='dealPrice' value={this.state.dealPrice} onChange={this.handleChangeDeal(3)} />
