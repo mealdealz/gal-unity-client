@@ -73,5 +73,319 @@
       {"name":"Tacos",
         "cost":3.5}]
   }]
+},{
+  "id": 4,
+  "restaurant": "Pub on Pearl",
+  "site": "www.thepubonpearl.com/",
+  "phone": "3037776768",
+  "address": "1101 S Pearl Street",
+  "location": [-104.980605, 39.696491],
+  "specials": [{
+    "special_id": 1,
+    "category": "Happy Hour",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1100,
+    "end_time": 1900,
+    "deals": [{"name": "Budweiser",
+      "cost": 2},
+      {"name": "BudLight",
+        "cost": 2}]
+  }]
+},{
+  "id": 5,
+  "restaurant": "Illegal Pete's",
+  "site": "www.illegalpetes.com",
+  "phone": "3036232169",
+  "address": "1530 16th St",
+  "location": [-104.999928, 39.750934],
+  "specials": [{
+    "special_id": 1,
+    "category": "Happy Hour",
+    "days":  [true, true, true, true, true, true, true],
+    "start_time": 1500,
+    "end_time": 2000,
+    "deals": [{"name": "Margaritas",
+      "cost": 4.5},
+      {"name": "Wells",
+        "cost": 3.5},
+      {"name": "Bud/BudLight",
+        "cost": 3},
+      {"name":"Chips and Salsa",
+        "cost":0}]
+  }]
+},{
+  "id": 6,
+  "restaurant": "The Rio",
+  "site": "www.riograndemexican.com",
+  "phone": "3036235432",
+  "address": "1525 Blake St",
+  "location": [-105.000087, 39.750224],
+  "specials": [{
+    "special_id": 1,
+    "category": "Happy Hour",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1500,
+    "end_time": 1800,
+    "deals": [{"name": "Select Drafts",
+      "cost": 3},
+      {"name": "Imperial Drafts",
+        "cost": 3},
+      {"name": "Tacos",
+        "cost": 3}]
+  }]
+},{
+  "id": 7,
+  "restaurant": "ViewHouse",
+  "site": "www.viewhouse.com",
+  "phone": "7208782015",
+  "address": "2015 Market St",
+  "location": [-104.993309, 39.754089],
+  "specials": [{
+    "special_id": 1,
+    "category": "Happy Hour",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1500,
+    "end_time": 1800,
+    "deals": [{"name": "Select Beers",
+      "cost": 3},
+      {"name": "Wells",
+        "cost": 3}]
+  }]
+},{
+  "id": 8,
+  "restaurant": "Hayter's",
+  "site": "www.haytersandco.com",
+  "phone": "3032978279",
+  "address": "1920 Blake St",
+  "location": [-104.994881, 39.753548],
+  "specials": [{
+    "special_id": 1,
+    "category": "Happy Hour",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1400,
+    "end_time": 1800,
+    "deals": [{"name": "Bud Light Drafts",
+      "cost": 3},
+      {"name": "Wells",
+        "cost": 4},
+      {"name": "Woody Creek Vodka & Gin",
+        "cost": 5}]
+  }]
+},{
+  "id": 9,
+  "restaurant": "Whiskey Bar",
+  "site": "www.whiskeybardenver.com",
+  "phone": "3032970303",
+  "address": "2203 Larimer St",
+  "location": [-104.990125, 39.755023],
+  "specials": [{
+    "special_id": 1,
+    "category": "Happy Hour",
+    "days":  [true, true, true, true, true, true, true],
+    "start_time": 1600,
+    "end_time": 1900,
+    "deals": [{"name": "U Call Its",
+      "cost": 4},
+      {"name": "Titan IPAs",
+        "cost": 3},
+      {"name": "Elijah Craig 12yr",
+        "cost": 3},
+      {"name":"Morrisons",
+        "cost":5}]
+  }]
+},{
+  "id": 10,
+  "restaurant": "Tap Fourteen",
+  "site": "www.tapfourteen.com",
+  "phone": "3032978279",
+  "address": "1920 Blake St",
+  "location": [-104.994881, 39.753548],
+  "specials": [{
+    "special_id": 1,
+    "category": "Happy Hour",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1400,
+    "end_time": 1800,
+    "deals": [{"name": "Tommy Knocker Daily Rind IPA",
+      "cost": 4},
+      {"name": "Mockery Pineapple Blonde Ale",
+        "cost": 4},
+      {"name": "Decadent Saint Sangria",
+        "cost": 5},
+      {"name":"Woody Creek Vodka & Gin",
+        "cost":6}]
+  }]
+},{
+  "id": 11,
+  "restaurant": "BurgerFi",
+  "site": "www.BurgerFi.com",
+  "phone": "7203905046",
+  "address": "1147 Broadway st",
+  "location": [-104.987837, 39.734939],
+  "specials": [{
+    "special_id": 2,
+    "category": "lunch",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1100,
+    "end_time": 1400,
+    "deals": [{"name": "Burger, Beer and Fries",
+      "cost": 10}]
+  }]
+},{
+  "id": 12,
+  "restaurant": "Patzcuaros",
+  "site": "www.Patzcuaros.com",
+  "phone": "3034554389",
+  "address": "2616 W 32nd Ave",
+  "location": [-105.019443, 39.761844],
+  "specials": [{
+    "special_id": 2,
+    "category": "lunch",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1100,
+    "end_time": 1400,
+    "deals": [{"name": "Burger, Beer and Fries",
+      "cost": 10}]
+  }]
+},{
+  "id": 13,
+  "restaurant": "Go Fish",
+  "site": "www.GoFishdenver.com",
+  "phone": "3037338881",
+  "address": "1 Broadway st",
+  "location": [-104.988012, 39.716942],
+  "specials": [{
+    "special_id": 2,
+    "category": "lunch",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1100,
+    "end_time": 1500,
+    "deals": [{"name": " Protein Lunch Box served w/ california roll, rice, miso soup & salad",
+      "cost": 10},{"name": "Special Sushi Lunch w/ Miso Soup & Salad",
+        "cost": 11}]
+  }]
+},{
+  "id": 14,
+  "restaurant": "Mt Fuji Sushi & Hibachi",
+  "site": "www.mtfujidenver.com‎",
+  "phone": "3038608088",
+  "address": "601 Grant St",
+  "location": [-104.983957, 39.725783],
+  "specials": [{
+    "special_id": 2,
+    "category": "lunch",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1100,
+    "end_time": 1500,
+    "deals": [{"name": "Two Roll Lunch Special",
+      "cost": 8.25},{"name": "Sushi Lunch",
+        "cost": 9.25},{"name": "Lunch Combo w/ hibachi protein, clear soup, salad, vegetables and rice",
+          "cost": 9.25}]
+  }]
+},{
+  "id": 15,
+  "restaurant": "Homegrown Tap and Dough",
+  "site": "tapanddough.com",
+  "phone": "7204598736",
+  "address": "1001 S Gaylord St",
+  "location": [-104.962204, 39.698249],
+  "specials": [{
+    "special_id": 2,
+    "category": "lunch",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1100,
+    "end_time": 1400,
+    "deals": [{"name": "Small Pizza & Salad",
+      "cost": 9}]
+  }]
+},{
+  "id": 16,
+  "restaurant": "Lala's Wine Bar & Pizzeria",
+  "site": "http://www.lalaswinebar.com/",
+  "phone": "3038619463",
+  "address": "410 E 7th Ave",
+  "location": [-104.981921, 39.727097],
+  "specials": [{
+    "special_id": 2,
+    "category": "lunch",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1100,
+    "end_time": 1400,
+    "deals": [{"name": " Pizza, Salad and Drink",
+      "cost": 7.95}]
+  }]
+},{
+  "id": 17,
+  "restaurant": "Lala's Wine Bar & Pizzeria",
+  "site": "http://www.lalaswinebar.com/",
+  "phone": "3038619463",
+  "address": "410 E 7th Ave",
+  "location": [-104.981921, 39.727097],
+  "specials": [{
+    "special_id": 3,
+    "category": "Dinner",
+    "days":  [true, false, false, false, false, false, false],
+    "start_time": 1500,
+    "end_time": 0000,
+    "deals": [{"name": " Bruschetta, Caesar Salad, Pizza and Spaghetti ",
+      "cost": 10}]
+  }]
+},{
+  "id": 18,
+  "restaurant": "Crepes & Crepes",
+  "site": "crepesncrepes.com",
+  "phone": "3033204184",
+  "address": "2816 E 3rd Ave",
+  "location": [-104.954093, 39.720869],
+  "specials": [{
+    "special_id": 3,
+    "category": "Dinner",
+    "days":  [false, false, true, true, true, true, false],
+    "start_time": 1600,
+    "end_time": 1800,
+    "deals": [{"name": "Savory Crepes",
+      "cost": 4},{"name": "Sweet Crepes",
+        "cost": 4},{"name": "Wine",
+          "cost": 4}]
+  }]
+},{
+  "id": 19,
+  "restaurant": "Angelo's Taverna",
+  "site": "angelosdenver.com",
+  "phone": "3037443366",
+  "address": "620 E 6th Ave",
+  "location": [-104.978999, 39.725433],
+  "specials": [{
+    "special_id": 3,
+    "category": "Dinner",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1500,
+    "end_time": 1800,
+    "deals": [{"name": "Half Shell Oysters",
+      "cost": 2},{"name": "Grilled Oysters",
+        "cost": 2},{"name": "Meatball, Sausage or Caprese Sliders",
+          "cost": 2},{"name": "House, Caesar or Spinach Salad",
+            "cost": 4},{"name": "One Topping 8in. Pizza",
+              "cost": 6}]
+  }]
+},{
+  "id": 20,
+  "restaurant": "Los Chingones",
+  "site": "loschingonesmexican.com",
+  "phone": "3032950686",
+  "address": "2463 Larimer St",
+  "location": [-104.986878, 39.757570],
+  "specials": [{
+    "special_id": 3,
+    "category": "Dinner",
+    "days":  [false, true, true, true, true, true, false],
+    "start_time": 1500,
+    "end_time": 1800,
+    "deals": [{"name": "Tacos",
+      "cost": 2},{"name": "Brussel Sprouts",
+        "cost": 3},{"name": "Pig Nachos",
+          "cost": 5},{"name": "Los Marg",
+            "cost": 5}]
+  }]
 }
 ]

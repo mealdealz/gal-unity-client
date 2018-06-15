@@ -11,8 +11,8 @@ class TimeFilter extends React.Component {
           <div className="appBackgroundColor">
           <Card.Group className="styledCards" itemsPerRow='3' centered={true}>
             <TimeFilterButton className="Lunch" src="images/barbecue-bbq-delicious-3690.jpg" filterTime={this.props.filterTime}/>
-            <TimeFilterButton className="Happy Hour" src="images/barbecue-bbq-delicious-3690.jpg" filterTime={this.props.filterTime}/>
-            <TimeFilterButton className="Dinner" src="images/barbecue-bbq-delicious-3690.jpg" filterTime={this.props.filterTime}/>
+            <TimeFilterButton className="Happy Hour" src="images/background-3445988_1920.jpg" filterTime={this.props.filterTime}/>
+            <TimeFilterButton className="Dinner" src="images/restaurant-691397_1920.jpg" filterTime={this.props.filterTime}/>
           </Card.Group>
           </div>
 
